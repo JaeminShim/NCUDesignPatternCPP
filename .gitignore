@@ -26,3 +26,13 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio files
+Debug/
+Release/
+*.vc
+*.vc.*
+*.suo
+*.lnk
+*.pdb
+*.map
