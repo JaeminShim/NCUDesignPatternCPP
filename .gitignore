@@ -37,3 +37,4 @@ Release/
 *.pdb
 *.map
 *.sdf
+*.exp
