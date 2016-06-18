@@ -256,7 +256,9 @@ int main()
 	while (1)
 	{
 		int cmd;
+		cout << "- Input a command (0 ~ 9. Quit otherwise): ";
 		cin >> cmd;
+
 		if (cin.fail())
 			break;
 
@@ -264,12 +266,17 @@ int main()
 		{
 			Shape* p = factory.Create(cmd);
 			if (p != nullptr)
+			{
 				v.push_back(p);
+				cout << "Item " << cmd << " is added" << endl;
+			}
 		}
 		else if (cmd == 9)
 		{
+			system("cls");
 			for (int i = 0; i < v.size(); i++)
 				v[i]->Draw();
+			cout << endl;
 		}
 	}
 
